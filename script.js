@@ -16,12 +16,55 @@ var img8 = document.querySelector(".img8")
 var img9 = document.querySelector(".img9")
 var trek = document.querySelector(".landing .mid .mid h1")
 
-gsap.from(trek,{
+
+Shery.mouseFollower({
+    skew: true,
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
+Shery.hoverWithMediaCircle(".nav .middle .cta", {
+    images: ["mountain.jpeg", "road.jpg", "gravel.jpeg","city.jpg","helmet.jpg","clothing.jpg"] ,
+  });
+
+var tl = gsap.timeline()
+
+tl.from(trek,{
     opacity:0,
     duration:2,
-    ease:"power1.in"
+    ease:"power2.in"
+})
+tl.from(".circle",{
+    delay:-.1,
+    duration:.5,
+    y:"80%",
+    ease:"power2.in"
 })
 
+tl.from(".nav",{
+    opacity:0,
+    duration:.5,
+    ease:"power1.out"
+})
+
+tl.from(".mid .left",{
+    opacity:0,
+    duration:.5,
+    x:-40,
+    ease:"power2.in"
+})
+
+
+Shery.imageEffect(".banner1 img",{
+    style: 5,
+    config:{"a":{"value":0.69,"range":[0,30]},"b":{"value":-0.97,"range":[-1,1]},"zindex":{"value":-9996999,"range":[-9999999,9999999]},"aspect":{"value":2.974667743593509},"ignoreShapeAspect":{"value":true},"shapePosition":{"value":{"x":0,"y":0}},"shapeScale":{"value":{"x":0.5,"y":0.5}},"shapeEdgeSoftness":{"value":0,"range":[0,0.5]},"shapeRadius":{"value":0,"range":[0,2]},"currentScroll":{"value":0},"scrollLerp":{"value":0.07},"gooey":{"value":false},"infiniteGooey":{"value":false},"growSize":{"value":4,"range":[1,15]},"durationOut":{"value":1,"range":[0.1,5]},"durationIn":{"value":1.5,"range":[0.1,5]},"displaceAmount":{"value":0.5},"masker":{"value":true},"maskVal":{"value":1.27,"range":[1,5]},"scrollType":{"value":0},"geoVertex":{"range":[1,64],"value":1},"noEffectGooey":{"value":true},"onMouse":{"value":1},"noise_speed":{"value":0.2,"range":[0,10]},"metaball":{"value":0.2,"range":[0,2]},"discard_threshold":{"value":0.5,"range":[0,1]},"antialias_threshold":{"value":0.002,"range":[0,0.1]},"noise_height":{"value":0.5,"range":[0,2]},"noise_scale":{"value":10,"range":[0,100]}},
+})
+
+
+Shery.imageEffect(".banner2",{
+    style: 5,
+   config: {"a":{"value":0.23,"range":[0,30]},"b":{"value":-0.98,"range":[-1,1]},"zindex":{"value":-9996999,"range":[-9999999,9999999]},"aspect":{"value":2.0822368421052633},"ignoreShapeAspect":{"value":true},"shapePosition":{"value":{"x":0,"y":0}},"shapeScale":{"value":{"x":0.5,"y":0.5}},"shapeEdgeSoftness":{"value":0,"range":[0,0.5]},"shapeRadius":{"value":0,"range":[0,2]},"currentScroll":{"value":0},"scrollLerp":{"value":0.07},"gooey":{"value":true},"infiniteGooey":{"value":true},"growSize":{"value":1.96,"range":[1,15]},"durationOut":{"value":1,"range":[0.1,5]},"durationIn":{"value":1.5,"range":[0.1,5]},"displaceAmount":{"value":0.5},"masker":{"value":true},"maskVal":{"value":1.24,"range":[1,5]},"scrollType":{"value":0},"geoVertex":{"range":[1,64],"value":1},"noEffectGooey":{"value":true},"onMouse":{"value":1},"noise_speed":{"value":0.2,"range":[0,10]},"metaball":{"value":0.11,"range":[0,2]},"discard_threshold":{"value":0.5,"range":[0,1]},"antialias_threshold":{"value":0,"range":[0,0.1]},"noise_height":{"value":0.41,"range":[0,2]},"noise_scale":{"value":6.11,"range":[0,100]}},
+    gooey:true
+})
 
 function greyout() {
     gsap.to(secs, {
@@ -42,7 +85,7 @@ function greyout() {
     });
 }
 
-greyout();
+
 
 var rotate = 270;
 var id = 0;
@@ -200,3 +243,4 @@ cl_marlin.forEach(function (value) {
         }
     });
 });
+

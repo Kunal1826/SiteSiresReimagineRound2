@@ -13,6 +13,7 @@ html,body{
 .circle{
     transform-origin: 50% 50%;
     transition: all ease 0.5s;
+    background: transparent;
 }
 .cta {
     border: none;
@@ -127,4 +128,110 @@ html,body{
   }
   
   
-  
+  @media (max-width:600px){
+    .circle{
+    position: relative;
+     top:45%;
+     left: -10%;
+     height: 400px;
+     width: 400px;
+     border-radius: 100%;
+    }
+    .innercircle{
+      height: 300px;
+      width: 300px;
+      border-radius: 100%;
+    }
+    .stripe .sec img{
+      position: absolute;
+      top:10px;
+      width: 370px;
+      left:20px
+    }
+    .stripe .first h1{
+      font-size: 15px;
+    }
+    .end .itemno h1{
+      font-size: 12px;
+      line-height: 15px;
+      margin-left: 5px;
+      margin-top: 20px;
+
+    }
+    .end .colors h1{
+      font-size: 12px;
+      line-height: 15px;
+      margin-left: 5px;
+      margin-top: 20px;
+      opacity: 0;
+    }
+    .mid .mid h1{
+      position: absolute;
+      font-size: 90px;
+      left: 60px;
+      top: 100px;
+    }
+    .mid .left h1{
+      display: none;
+    }
+    .mid .right{
+      display: none;
+    }
+    .landing .nav{
+      margin-top: 20px;
+      display: block;
+      margin-right: 20px;
+    }
+    .landing .left{
+      display: none;
+    }
+    .landing .right{
+      margin-top: -25px;
+      margin-left: 150px;
+    }
+    .landing .nav .middle{
+      display: flex;
+      gap: 10px;
+      margin-left: -8px;
+    }
+    .landing .nav .middle .cta span{
+      font-size: 12px;
+    }
+    .landing .nav .middle .cta span{
+      font-size: 12px;
+    } 
+    .banner1
+    .banner1 img{
+      height: 100%;
+      object-position: left;
+    }
+    .banner1 .content{
+      top: 28%;
+      left:55%;
+    }
+    .banner1 .content h1{
+      font-size: 40px;
+      line-height: 30px;
+    }
+    .banner1 .content p{
+      font-size: 12px;
+      line-height: 12px;
+      margin-top: 5px;
+    }
+    .banner2{
+    height: 80%;
+
+    }
+    .banner2 img{
+      object-position: 50% 50%
+      }
+      .overtext{
+       transform: translateY(-50%);
+      }
+      .overtext h1{
+        width: 300px;
+        font-size: 18px;
+        letter-spacing: -1px;
+        display: inline-block;
+      }
+  }
