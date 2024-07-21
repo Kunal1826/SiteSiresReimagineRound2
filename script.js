@@ -602,7 +602,7 @@ function canvacode (){
       snap: "frame",
       ease: `none`,
       scrollTrigger: {
-        scrub: 2,
+        scrub: 4,
         trigger: `#page>canvas`,
         start: `top top`,
         end: `600% top`,
@@ -738,10 +738,11 @@ tl.from(".circle",{
     ease:"power2.in"
 })
 
-tl.from(".nav",{
+tl.from(".nav .stag",{
+    y:-50,
     opacity:0,
-    duration:.5,
-    ease:"power1.out"
+    duration:1,
+    ease:"power1.out",
 })
 
 tl.from(".mid .left",{
@@ -917,7 +918,7 @@ cl_marlin.forEach(function (value) {
             console.log("clicked");
             dets.target.style.transform = "scale(1.5)";
             dets.target.style.border = "2px solid black";
-            changeColor("#EAF7FF");
+            changeColor("#a9d9f7");
             img7.classList.add("hidden")
             img8.classList.remove("hidden")
             cl_sl5.forEach(function (elem) {
@@ -947,7 +948,26 @@ var video = document.querySelector(".bgvideo video")
 var vidbut = document.querySelector(".bgvideo h3")
 
 vidbut.addEventListener("mouseenter",function(){
-    video.style.display= "inherit"
+   
     bgvideo.style.transform = "scale(1) translate(-50%, -50%)"
-    
+    gsap.to(video,{
+        opacity:.7,
+        duration: .2,
+        ease:"power1.in"
+    })
+})
+
+gsap.to(".fullcateg",{
+    scrollTrigger:{
+        trigger:".categ1",
+        scroller:"#main",
+        start:"top 0%",
+        end: "top -200%",
+        markers:true,
+        scrub:.5,
+        pin:true
+    },
+    '--clip':"100%",
+    ease:"power1.in",
+    duration:2,
 })

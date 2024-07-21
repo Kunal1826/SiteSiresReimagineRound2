@@ -2,6 +2,10 @@
   font-family: gilroy;
   src: url(./Gilroy-Medium\ \(2\).woff2);
 }
+@font-face {
+  font-family: wosker;
+  src: url(./Wosker-Demo-BF65e1547615ba8.woff2);
+}
 *{
     margin: 0;
     padding: 0;
@@ -352,7 +356,7 @@ canvas{
         position: relative;
       }
       .bgvideo video{
-        display: flex;
+        opacity: .7;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -369,4 +373,8 @@ canvas{
       .bgvideo .info{
         padding: 10px;
       }
+  }
+
+  .fullcateg{
+    clip-path: circle(var(--clip) at 51.5% 61%);
   }
