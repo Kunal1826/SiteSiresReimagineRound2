@@ -31,7 +31,7 @@ html,body{
   .cta span {
     padding-bottom: 7px;
     letter-spacing: 3px;
-    font-size: 14px;
+    font-size: .75vw;
     padding-right: 15px;
     text-transform: uppercase;
   }
