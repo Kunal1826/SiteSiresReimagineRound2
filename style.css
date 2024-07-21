@@ -126,13 +126,22 @@ html,body{
   .wave-group .input:focus ~ .bar:after {
     width: 50%;
   }
-  
+  .circle{
+    height: 45vmax;
+    width: 45vmax;
+    border-radius: 100%;
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    border: 2px solid white;
+    transform:  rotate(270deg) ;
+  }
   
   @media (max-width:600px){
     .circle{
     position: relative;
      top:45%;
-     left: -10%;
+     left: -15%;
      height: 400px;
      width: 400px;
      border-radius: 100%;
@@ -155,14 +164,14 @@ html,body{
       font-size: 12px;
       line-height: 15px;
       margin-left: 5px;
-      margin-top: 20px;
+      margin-top: 30px;
 
     }
     .end .colors h1{
       font-size: 12px;
       line-height: 15px;
       margin-left: 5px;
-      margin-top: 20px;
+      margin-top: 30px;
       opacity: 0;
     }
     .mid .mid h1{
@@ -233,5 +242,28 @@ html,body{
         font-size: 18px;
         letter-spacing: -1px;
         display: inline-block;
+      }
+      .bgvideo{
+        height: 25vh;
+        width: 100%;
+        position: relative;
+      }
+      .bgvideo video{
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      
+      }
+      .bgvideo h1{
+        font-size: 11px;
+      }
+      .bgvideo h3{
+      margin-top: 8px;
+      font-size: 10px;
+      }
+      .bgvideo .info{
+        padding: 10px;
       }
   }

@@ -244,3 +244,12 @@ cl_marlin.forEach(function (value) {
     });
 });
 
+var bgvideo = document.querySelector(".info")
+var video = document.querySelector(".bgvideo video")
+var vidbut = document.querySelector(".bgvideo h3")
+
+vidbut.addEventListener("mouseenter",function(){
+    video.style.display= "inherit"
+    bgvideo.style.transform = "scale(1) translate(-50%, -50%)"
+    
+})
