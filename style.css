@@ -350,7 +350,7 @@ background-clip: text;
 color: transparent;
 }
 
-.button {
+.buttu {
 padding: 2px 2px;
 border: none;
 border-radius: 5px;
@@ -366,13 +366,13 @@ overflow: hidden;
 
 }
 
-button:hover {
+.buttu:hover {
 color: #000000;
 transform: scale(1.1);
 box-shadow: 4px 5px 17px -4px #f8f8f8;
 }
 
-button::before {
+.buttu::before {
 content: "";
 position: absolute;
 left: -50px;
@@ -385,7 +385,7 @@ z-index: -1;
 transition: width 1000ms;
 }
 
-button:hover::before {
+.buttu:hover::before {
 width: 250%;
 }
 
