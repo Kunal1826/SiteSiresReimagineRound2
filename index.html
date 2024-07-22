@@ -8,139 +8,206 @@
     <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <style>
+    .gearup{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.equip{
+    filter: drop-shadow(10px 10px 30px rgb(59, 59, 59));
+    
+}
+        @media (max-width:600px) {
+            .categories {
+                overflow: hidden;
+
+            }
+
+            .details {
+                top: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                margin-bottom: 70%;
+            }
+
+            .details .btn {
+                padding: 2px 8px;
+                letter-spacing: -1px;
+            }
+
+            .details .price {
+                padding: 2px 8px;
+                letter-spacing: -1px;
+            }
+
+
+            .product-container10 {
+                position: relative;
+                top: -40% !important;
+                scale: .5;
+                z-index: 889999000;
+            }
+
+            .product-container11 {
+                position: relative;
+                top: -40% !important;
+                scale: .5;
+                z-index: 889999000;
+            }
+
+            .product-container13 {
+                position: relative;
+                top: -40% !important;
+                scale: .5;
+                z-index: 889999000;
+            }
+
+
+        }
     </style>
 </head>
 
 <body class="bg-black">
     <div id="main" class="font-light">
-      <div class="landing h-screen w-full relative bg-black text-white overflow-hidden px-[3vw]">
-        <div class="nav sathsath h-[5vw] w-full flex justify-between items-center ">
-            <div class="left flex items-center">
-                <img class="h-[2vw]" src="./logo.png" alt="">
-            </div>
-            <div class="middle flex items-center gap-[.7vw] text-[.8vw] font uppercase mt-4">
-                <button class="cta">
-                    <span class="hover-underline-animation">Mountain</span>
-                  </button>
-                  <button class="cta">
-                    <span class="hover-underline-animation">Road</span>
-                  </button>
-                  <button class="cta">
-                    <span class="hover-underline-animation">Gravel</span>
-                  </button>
-                  <button class="cta">
-                    <span class="hover-underline-animation">City</span>
-                  </button>
-                  <button class="cta">
-                    <span class="hover-underline-animation">Equipments</span>
-                  </button>
-                  <button class="cta">
-                    <span class="hover-underline-animation">Clothing</span>
+        <div class="landing h-screen w-full relative bg-black text-white overflow-hidden px-[3vw]">
+            <div class="nav sathsath h-[5vw] w-full flex justify-between items-center ">
+                <div class="left flex items-center">
+                    <img class="h-[2vw]" src="./logo.png" alt="">
+                </div>
+                <div class="middle flex items-center gap-[.7vw] text-[.8vw] font uppercase mt-4">
+                    <button class="cta">
+                        <span class="hover-underline-animation">Mountain</span>
+                    </button>
+                    <button class="cta">
+                        <span class="hover-underline-animation">Road</span>
+                    </button>
+                    <button class="cta">
+                        <span class="hover-underline-animation">Gravel</span>
+                    </button>
+                    <button class="cta">
+                        <span class="hover-underline-animation">City</span>
+                    </button>
+                    <button class="cta">
+                        <span class="hover-underline-animation">Equipments</span>
+                    </button>
+                    <button class="cta">
+                        <span class="hover-underline-animation">Clothing</span>
 
-                  </button>
-                  <button class="cta">
-                    <span class="hover-underline-animation">Sale</span>
-                  </button>
-                  <button class="cta">
-                    <span class="hover-underline-animation">Bike Dealer</span>
-                  </button>
-                  <button class="cta">
-                    <span class="hover-underline-animation">Shops</span>
-            </div>
-            <div class="right">
-                <div class="wave-group">
-                    <input required="" type="text" class="input">
-                    <span class="bar"></span>
-                    <label class="label">
-                      <span class="label-char" style="--index: 0">S</span>
-                      <span class="label-char" style="--index: 1">e</span>
-                      <span class="label-char" style="--index: 2">a</span>
-                      <span class="label-char" style="--index: 3">r</span>
-                      <span class="label-char" style="--index: 4">c</span>
-                      <span class="label-char" style="--index: 4">h</span>
-                    </label>
-                  </div>
-            </div>
-        </div>
-        <div class="mid h-[35vw] flex justify-between">
-            <div class="left h-full w-[20%] flex items-center -rotate-[90deg] -ml-[8vw] ">
-                <h1 class="text-[1vw] tracking-[2px] mr-">Lidl-Trek's Longo Borghini wins</h1>
-            </div>
-            <div class="mid h-full w-[60%] flex justify-center items-center  font-extrabold text-[20vw] ml-28 bg-">
-                <h1 class="bg-gradient-to-r from-zinc-700 via-white/80 to-zinc-500 bg-clip-text text-transparent opacity-40">TREK</h1>
-            </div>
-            <div class="right h-full w-[20%] flex flex-col gap-5 mt-[16vw] relative left-[18%]  ">
-                <div class="sl6 colo absolute hidden">
-                    <div class="clbix h-[2vh] w-[2vh] bg-[#EB8B94] rounded-full scale-150 shadow-lg p-1"></div>
+                    </button>
+                    <button class="cta">
+                        <span class="hover-underline-animation">Sale</span>
+                    </button>
+                    <button class="cta">
+                        <span class="hover-underline-animation">Bike Dealer</span>
+                    </button>
+                    <button class="cta">
+                        <span class="hover-underline-animation">Shops</span>
                 </div>
-                <div class="slr7 colo absolute opacity-0 hidden">
-                    <div class="clbix h-[2vh] w-[2vh] bg-[#80B6D9] rounded-full scale-150 shadow-lg p-1"></div>
-                </div>
-                <div class="sl5 colo flex gap-5 flex-col absolute hidden">
-                    <div id="0" class="clbix h-[2vh] w-[2vh] bg-[#80B6D9] rounded-full scale-150 shadow-lg p-1"></div>
-                    <div id="1" class="clbix h-[2vh] w-[2vh] bg-[#CCCCCC] rounded-full  shadow-lg p-1 mt-5"></div>
-                </div>
-                <div class="ealr colo flex gap-5 flex-col absolute hidden">
-                    <div id="0" class="clbix h-[2vh] w-[2vh] bg-[#EB8B94] rounded-full scale-150 shadow-lg p-1"></div>
-                    <div id="1" class="clbix h-[2vh] w-[2vh] bg-[#CCCCCC] rounded-full  shadow-lg p-1 mt-5"></div>
-                </div>
-                <div class="fxs colo flex gap-5 flex-col absolute hidden">
-                    <div id="0" class="clbix h-[2vh] w-[2vh] bg-[#91A68C] rounded-full scale-150 shadow-lg p-1"></div>
-                    <div id="1" class="clbix h-[2vh] w-[2vh] bg-[#999999] rounded-full  shadow-lg p-1 mt-5"></div>
-                </div>
-                <div class="marlin colo flex gap-5 flex-col absolute hidden">
-                    <div id="0" class="clbix h-[2vh] w-[2vh] bg-[#EAF7FF] rounded-full  shadow-lg p-1"></div>
-                    <div id="1" class="clbix h-[2vh] w-[2vh] bg-[#CCCCCC] rounded-full scale-150 shadow-lg p-1 mt-5"></div>
-                    <div id="3" class="clbix h-[2vh] w-[2vh] bg-[#84ABAB] rounded-full  shadow-lg p-1 mt-5"></div>
-                </div>
-                <div class="performance colo flex gap-5 flex-col absolute hidden">
-                    <div class="clbix h-[2vh] w-[2vh] bg-[#80B6D9] rounded-full scale-150 shadow-lg p-1"></div>
-                </div>
-                <div class="performance colo flex gap-5 flex-col absolute hidden">
-                    <div class="clbix h-[2vh] w-[2vh] bg-[#CCCCCC] rounded-full scale-150 shadow-lg p-1"></div>
+                <div class="right">
+                    <div class="wave-group">
+                        <input required="" type="text" class="input">
+                        <span class="bar"></span>
+                        <label class="label">
+                            <span class="label-char" style="--index: 0">S</span>
+                            <span class="label-char" style="--index: 1">e</span>
+                            <span class="label-char" style="--index: 2">a</span>
+                            <span class="label-char" style="--index: 3">r</span>
+                            <span class="label-char" style="--index: 4">c</span>
+                            <span class="label-char" style="--index: 4">h</span>
+                        </label>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="end h-[6vw] w-full  flex justify-between items-center  mt-10 ">
-            <div class="itemno h-[3vw] w-[10vw]  relative flex justify-center">
-                <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5319939</h1>
-                <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5320262</h1>
-                <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5319903</h1>
-                <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5278270</h1>
-                <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5298251</h1>
-                <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5267864</h1>
-                <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5277265</h1>
-                <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5298259</h1>
+            <div class="mid h-[35vw] flex justify-between">
+                <div class="left h-full w-[20%] flex items-center -rotate-[90deg] -ml-[8vw] ">
+                    <h1 class="text-[1vw] tracking-[2px] mr-">Lidl-Trek's Longo Borghini wins</h1>
+                </div>
+                <div class="mid h-full w-[60%] flex justify-center items-center  font-extrabold text-[20vw] ml-28 bg-">
+                    <h1
+                        class="bg-gradient-to-r from-zinc-700 via-white/80 to-zinc-500 bg-clip-text text-transparent opacity-40">
+                        TREK</h1>
+                </div>
+                <div class="right h-full w-[20%] flex flex-col gap-5 mt-[16vw] relative left-[18%]  ">
+                    <div class="sl6 colo absolute hidden">
+                        <div class="clbix h-[2vh] w-[2vh] bg-[#EB8B94] rounded-full scale-150 shadow-lg p-1"></div>
+                    </div>
+                    <div class="slr7 colo absolute opacity-0 hidden">
+                        <div class="clbix h-[2vh] w-[2vh] bg-[#80B6D9] rounded-full scale-150 shadow-lg p-1"></div>
+                    </div>
+                    <div class="sl5 colo flex gap-5 flex-col absolute hidden">
+                        <div id="0" class="clbix h-[2vh] w-[2vh] bg-[#80B6D9] rounded-full scale-150 shadow-lg p-1">
+                        </div>
+                        <div id="1" class="clbix h-[2vh] w-[2vh] bg-[#CCCCCC] rounded-full  shadow-lg p-1 mt-5"></div>
+                    </div>
+                    <div class="ealr colo flex gap-5 flex-col absolute hidden">
+                        <div id="0" class="clbix h-[2vh] w-[2vh] bg-[#EB8B94] rounded-full scale-150 shadow-lg p-1">
+                        </div>
+                        <div id="1" class="clbix h-[2vh] w-[2vh] bg-[#CCCCCC] rounded-full  shadow-lg p-1 mt-5"></div>
+                    </div>
+                    <div class="fxs colo flex gap-5 flex-col absolute hidden">
+                        <div id="0" class="clbix h-[2vh] w-[2vh] bg-[#91A68C] rounded-full scale-150 shadow-lg p-1">
+                        </div>
+                        <div id="1" class="clbix h-[2vh] w-[2vh] bg-[#999999] rounded-full  shadow-lg p-1 mt-5"></div>
+                    </div>
+                    <div class="marlin colo flex gap-5 flex-col absolute hidden">
+                        <div id="0" class="clbix h-[2vh] w-[2vh] bg-[#EAF7FF] rounded-full  shadow-lg p-1"></div>
+                        <div id="1"
+                            class="clbix h-[2vh] w-[2vh] bg-[#CCCCCC] rounded-full scale-150 shadow-lg p-1 mt-5"></div>
+                        <div id="3" class="clbix h-[2vh] w-[2vh] bg-[#84ABAB] rounded-full  shadow-lg p-1 mt-5"></div>
+                    </div>
+                    <div class="performance colo flex gap-5 flex-col absolute hidden">
+                        <div class="clbix h-[2vh] w-[2vh] bg-[#80B6D9] rounded-full scale-150 shadow-lg p-1"></div>
+                    </div>
+                    <div class="performance colo flex gap-5 flex-col absolute hidden">
+                        <div class="clbix h-[2vh] w-[2vh] bg-[#CCCCCC] rounded-full scale-150 shadow-lg p-1"></div>
+                    </div>
+                </div>
             </div>
-            <div class="colors h-[3vw] w-[12vw] relative flex justify-center">
-                <h1 class="text-[1vw] text-center absolute opacity-0  ">Crimson</h1>
-                <h1 class="text-[1vw] text-center absolute opacity-0  ">Navy Smoke</h1>
-                <h1 class="text-[1vw] text-center absolute opacity-0  ">Hex Blue</h1>
-                <h1 class="text-[1vw] text-center absolute opacity-0  ">Crimson Dark Carmine Fade</h1>
-                <h1 class="text-[1vw] text-center absolute opacity-0  ">DARK AQUATIC</h1>
-                <h1 class="text-[1vw] text-center absolute opacity-0  ">Galactic Grey</h1>
-                <h1 class="text-[1vw] text-center absolute opacity-0  ">Azure</h1>
-                <h1 class="text-[1vw] text-center absolute opacity-0  ">Smoke gray</h1>
+            <div class="end h-[6vw] w-full  flex justify-between items-center  mt-10 ">
+                <div class="itemno h-[3vw] w-[10vw]  relative flex justify-center">
+                    <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5319939</h1>
+                    <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5320262</h1>
+                    <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5319903</h1>
+                    <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5278270</h1>
+                    <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5298251</h1>
+                    <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5267864</h1>
+                    <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5277265</h1>
+                    <h1 class="text-[1vw] text-center absolute opacity-0 ">Model 5298259</h1>
+                </div>
+                <div class="colors h-[3vw] w-[12vw] relative flex justify-center">
+                    <h1 class="text-[1vw] text-center absolute opacity-0  ">Crimson</h1>
+                    <h1 class="text-[1vw] text-center absolute opacity-0  ">Navy Smoke</h1>
+                    <h1 class="text-[1vw] text-center absolute opacity-0  ">Hex Blue</h1>
+                    <h1 class="text-[1vw] text-center absolute opacity-0  ">Crimson Dark Carmine Fade</h1>
+                    <h1 class="text-[1vw] text-center absolute opacity-0  ">DARK AQUATIC</h1>
+                    <h1 class="text-[1vw] text-center absolute opacity-0  ">Galactic Grey</h1>
+                    <h1 class="text-[1vw] text-center absolute opacity-0  ">Azure</h1>
+                    <h1 class="text-[1vw] text-center absolute opacity-0  ">Smoke gray</h1>
+                </div>
             </div>
-        </div>
-        
+
             <div class="circle sathsath">
-                <div class="innercircle h-[35vw] w-[35vw] rounded-full absolute bg-white left-[50%] top-[50%] opacity-15 -translate-y-1/2 -translate-x-1/2"></div>
-            <div class="stripe h-[2vw] bg-re-200 w-[100%]  absolute top-1/2  left-1/2 rotate-[45deg] origin-[0%_50%] flex">
+                <div
+                    class="innercircle h-[35vw] w-[35vw] rounded-full absolute bg-white left-[50%] top-[50%] opacity-15 -translate-y-1/2 -translate-x-1/2">
+                </div>
+                <div
+                    class="stripe h-[2vw] bg-re-200 w-[100%]  absolute top-1/2  left-1/2 rotate-[45deg] origin-[0%_50%] flex">
                     <div class="first w-[50%] h-full ">
-                        <div class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[95%] top-[25%]"></div>
-                        <h1 class="font-medium absolute text-[1.3vw] left-[42%] top-[5%] rotate-[90deg]">Madone SL 6 Gen 8
+                        <div class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[95%] top-[25%]">
+                        </div>
+                        <h1 class="font-medium absolute text-[1.3vw] left-[42%] top-[5%] rotate-[90deg]">Madone SL 6 Gen
+                            8
                         </h1>
                     </div>
                     <div class="sec opacity-0 w-[50%] h-full ">
-                       
+
                         <img class="origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2 "
                             src="https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/MadoneSL6-25-46219-B-Primary"
                             alt="">
@@ -148,12 +215,13 @@
                 </div>
                 <div class="stripe h-[2vw] bg-re-200 w-[100%]  absolute top-1/2 left-1/2  rotate-[90deg] origin-left">
                     <div class="first w-[50%] h-full ">
-                        <div class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[94%] top-[25%]"></div>
+                        <div class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[94%] top-[25%]">
+                        </div>
                         <h1 class="font-medium absolute text-[1.3vw] left-[44%] top-[5%]  rotate-[90deg]">Madone SLR 7
                         </h1>
                     </div>
                     <div class="sec opacity-0 w-[50%] h-full">
-                      
+
                         <img class="origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
                             src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/MadoneSLR7-25-46687-B-Primary"
                             alt="">
@@ -161,79 +229,86 @@
                 </div>
                 <div class="stripe h-[2vw] bg-re-200 w-[100%]  absolute top-1/2 left-1/2  rotate-[135deg] origin-left">
                     <div class="first w-[50%] h-full ">
-                        <div class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[95%] top-[25%]"></div>
-                        <h1 class="font-medium absolute text-[1.3vw] left-[45%] top-[5%]  rotate-[90deg]">Madone SL 5 
+                        <div class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[95%] top-[25%]">
+                        </div>
+                        <h1 class="font-medium absolute text-[1.3vw] left-[45%] top-[5%]  rotate-[90deg]">Madone SL 5
                         </h1>
                     </div>
                     <div class="sec opacity-0 w-[50%] h-full">
-                       
+
                         <img class="img1  origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
                             src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/MadoneSL5-25-46218-B-Primary"
                             alt="">
-                            <img class="img2  hidden origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
+                        <img class="img2  hidden origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
                             src="https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/MadoneSL5-25-46218-A-Primary"
                             alt="">
                     </div>
                 </div>
                 <div class="stripe h-[2vw] bg-re-200 w-[100%]  absolute top-1/2 left-1/2  rotate-[180deg] origin-left">
                     <div class="first w-[50%] h-full ">
-                        <div class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[98%] top-[25%]"></div>
+                        <div class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[98%] top-[25%]">
+                        </div>
                         <h1 class="font-medium absolute text-[1.3vw] left-[47%] top-[5%]  rotate-[90deg]">Émonda ALR
                         </h1>
                     </div>
                     <div class="sec opacity-0w-[50%] h-full">
-                        
+
                         <img class="img3 origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
                             src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/EmondaALR5-24-41426-A-Primary"
                             alt="">
-                            <img class="img4 hidden origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
+                        <img class="img4 hidden origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
                             src="https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/EmondaALR5-24-41426-B-Primary"
                             alt="">
                     </div>
                 </div>
                 <div class="stripe h-[2vw] bg-re-200 w-[100%]  absolute top-1/2 left-1/2  rotate-[225deg] origin-left">
                     <div class="first w-[50%] h-full ">
-                        <div class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[101%] top-[25%]"></div>
+                        <div class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[101%] top-[25%]">
+                        </div>
                         <h1 class="font-medium absolute text-[1.3vw] left-[52%] top-[5%]  rotate-[90deg]">FX Sport
                         </h1>
                     </div>
                     <div class="sec opacity-0 w-[50%] h-full">
-                        
+
                         <img class="img5 origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
                             src="https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/FXSport4Carbon-24-40822-B-Primary"
                             alt="">
-                            <img class="img6 hidden origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
+                        <img class="img6 hidden origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
                             src="https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/FXSport4Carbon-24-40822-A-Primary"
                             alt="">
                     </div>
                 </div>
                 <div class="stripe h-[2vw] bg-re-200 w-[100%]  absolute top-1/2 left-1/2  rotate-[270deg] origin-left">
                     <div class="first w-[50%] h-full ">
-                        <div class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[102.5%] top-[25%]"></div>
+                        <div
+                            class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[102.5%] top-[25%]">
+                        </div>
                         <h1 class="font-medium absolute text-[1.3vw] left-[49%] top-[5%]  rotate-[90deg]">Marlin Gen 3
                         </h1>
                     </div>
                     <div class="sec opacity-0 w-[50%] h-full">
-                        
+
                         <img class="img7 origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
                             src="https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/Marlin7_23_36967_A_Primary"
                             alt="">
-                            <img class="img8 hidden origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
+                        <img class="img8 hidden origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
                             src="https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/Marlin7_23_36967_C_Primary"
                             alt="">
-                            <img class="img9 hidden origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
+                        <img class="img9 hidden origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
                             src="https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/Marlin7_23_36967_B_Primary"
                             alt="">
                     </div>
                 </div>
                 <div class="stripe h-[2vw] bg-re-200 w-[100%]  absolute top-1/2 left-1/2  rotate-[315deg] origin-left">
                     <div class="first w-[50%] h-full ">
-                        <div class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[101%] top-[25%]"></div>
-                        <h1 class="font-medium absolute text-[1.3vw] left-[44%] top-[5%]  rotate-[90deg]">Émonda Performance 
+                        <div class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[101%] top-[25%]">
+                        </div>
+                        <h1 class="font-medium absolute text-[1.3vw] left-[44%] top-[5%]  rotate-[90deg]">Émonda
+                            Performance
                         </h1>
                     </div>
                     <div class="sec opacity-0 w-[50%] h-full">
-                        
+
                         <img class="origin-[50%_50%] inline-block w-[70vw] top-[0] -left-[10%] absolute rotate-[90deg] translate-x-1/2 -translate-y-1/2"
                             src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/EmondaSLR7eTap_23_33139_C_Primary"
                             alt="">
@@ -241,7 +316,8 @@
                 </div>
                 <div class="stripe bg-re-200 h-[2vw] w-[100%]  absolute top-1/2 left-1/2  rotate-[360deg] origin-left">
                     <div class="first w-[50%] h-full ">
-                        <div class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[98%] top-[25%]"></div>
+                        <div class="dot absolute h-[1vw] w-[1vw] rounded-full bg-white relative left-[98%] top-[25%]">
+                        </div>
                         <h1 class="font-medium absolute text-[1.3vw] left-[46%] top-[5%]  rotate-[90deg]">Madone Gen 8
                         </h1>
                     </div>
@@ -256,104 +332,107 @@
         <div id="canvamove">
             <div id="nav">
                 <h3><b>TREK</h3>
-               
+
             </div>
             <div id="page">
-                
+
                 <canvas></canvas>
             </div>
             <div id="page1">
-    
+
                 <h1 style="color: rgb(0, 0, 0);">TREKKING</h1>
-               
-                
+
+
             </div>
             <div id="page2">
-               
+
             </div>
             <div id="page3">
-        
+
 
             </div>
         </div>
-        <div class="categ1 relative h-screen w-full bg-[url(https://images.unsplash.com/photo-1503669678209-c68d00b3765d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center overflow-hidden ">
+        <div
+            class="categ1 relative h-screen w-full bg-[url(https://images.unsplash.com/photo-1503669678209-c68d00b3765d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center overflow-hidden ">
             <div class="categ absolute left-[30%] top-[45%]">
                 <h1 class="text-[4vw] -mb-[4vw]">our</h1>
                 <h1 class="text-[7vw] flex items-center">Categ<span class="text-[8vw] font-extralight">o</span>ries</h1>
             </div>
             <div class="fullcateg absolute h-[100%] w-[100%]  bg-black" style="--clip:0%">
                 <div class="categories w-full h-screen  py-6">
-                   
+       
+   
                     <nav class="text-zinc-100 text-[17px] font-medium capitalize flex  justify-center items-center gap-4   text-black">
                         
-                         
+                        <div class="nav-buttons flex justify-center items-center gap-4">  
                           <button id="Checkpoint" class="buttu ">
                            
                              Checkpoint</button>
                             
                             <button id="Domane" class="buttu">
-                
+                               
                                 Domane</button>
                                 
                             <button id="dualSport" class="buttu">
-                
+                               
                                 Dual Sport</button>
                                 
                             <button id="FX" class="buttu">
-                
+                               
                                 FX Bikes</button>
                                 
                             <button id="fuelEX" class="buttu">
-                
+                               
                                 Fuel EX</button>
                                 
                             <button id="madone" class="buttu">
-                
+                               
                                  madone</button>
                                 
                             <button id="Marlin" class="buttu">
-                
+                               
                                 Marlin</button>
                                 
                                 
                             <button id="Procaliber" class="buttu">
-                
+                               
                                 Procaliber</button>
                                 
                             <button id="Roscoe" class="buttu">
-                
+                               
                                 Roscoe</button>
                                 
                             <button id="speedConcept" class="buttu leading-tight py-2">
-                
+                               
                                 Speed Concept</button>
                                 
                             <button id="Supercaliber" class="buttu">
-                
+                               
                                  Supercaliber</button>
                             
                             <button id="topFuel" class="buttu">
-                
+                               
                                 Top Fuel</button>
                             
                             <button id="Verve" class="buttu">
-                
+                               
                                  Verve</button>
                             
                             <button id="xCaliber" class="buttu">
-                
+                               
                                 X-Caliber</button>
                 
                             <button id="emonda" class="buttu">
-                
+                               
                                 Émonda    </h1></button>
+                        </div>      
                     </nav>
             
                    
             
                     <div class="page1 relative w-full h-screen ">
-                        <div class="backtext absolute  text-center top-[40%] font-semibold font-rockstar left-[50%] -translate-x-1/2 -translate-y-1/2 text-[210px] scale-90 bg-gradient-to-r from-zinc-700 via-white/80 to-zinc-500 bg-clip-text text-transparent opacity-40 z-[0]">
-                            <h1 class="gradient-text">CHECKPOINT</h1>
+                        <div class="backtext absolute  text-center top-[40%] font-semibold font-rockstar left-[50%] -translate-x-1/2 -translate-y-1/2 text-[210px] scale-90 bg-gradient-to-r from-zinc-700 via-white/80 to-zinc-500 bg-clip-text text-transparent opacity-40 z-[0] ">
+                            <h1 class="gradient-text ">CHECKPOINT</h1>
                         </div>
                         
                         <div id="Checkpoint" class="w-full h-screen absolute z-[2]">
@@ -365,10 +444,10 @@
                             <div id="slider-container3" class="slider-container">
                                 <div id="slider-arrow3" class="slider-arrow left">&lt;</div>
                                 <div id="slider-arrow3" class="slider-arrow right">&gt;</div>
-                                <div id="products3" class="product-container products ">
+                                <div id="products3" class="product-container products">
                                     
                                 </div>
-                                <div id="details3" class="details ">
+                                <div id="details3" class="details info">
                                     <div id="color3" class="color">
                                         <div class="btn bg-zinc-700 text-white px-4 py-2 rounded-full transition duration-200 ease-in-out hover:bg-zinc-900 active:bg-black focus:outline-none"></div>
                                     </div>
@@ -512,7 +591,7 @@
             
                     <div class="page7  relative w-full h-screen  ">
                         <div class="backtext absolute  text-center top-[40%] font-semibold font-rockstar left-[50%] -translate-x-1/2 -translate-y-1/2 text-[210px] z-[0]  scale-90 bg-gradient-to-r from-zinc-700 via-white/80 to-zinc-500 bg-clip-text text-transparent opacity-40 z-[0]">
-                            <h1 class="gradient-text">MARLIN</h1>
+                            <h1 class="gradient-text ">MARLIN</h1>
                         </div>
                         
                         <div id="Marlin" class="w-full h-screen absolute z-[200]">
@@ -523,7 +602,7 @@
                                 <div id="products8" class="product-container products">
                                     
                                 </div>
-                                <div id="details8" class="details ">
+                                <div id="details8" class="details max:sm-mb-[-200px] max:sm-top-[-10%]">
                                     <div id="color8" class="color">
                                         <div class="btn bg-zinc-700 text-white px-4 py-2 rounded-full transition duration-200 ease-in-out hover:bg-zinc-900 active:bg-black focus:outline-none"></div>
                                     </div>
@@ -535,7 +614,7 @@
                         </div>
                     </div>
             
-                    <div class="page8  relative w-full h-screen">
+                    <div class="page8  relative w-full h-screen  ">
                         <div class="backtext absolute  text-center top-[40%] font-semibold font-rockstar left-[50%] -translate-x-1/2 -translate-y-1/2 text-[210px] z-[0]  scale-90 bg-gradient-to-r from-zinc-700 via-white/80 to-zinc-500 bg-clip-text text-transparent opacity-40 z-[0]">
                             <h1 class="gradient-text">PROCALIBER</h1>
                         </div>
@@ -560,7 +639,7 @@
                         </div>
                     </div>
             
-                    <div class="page9  relative w-full h-screen">
+                    <div class="page9  relative w-full h-screen  ">
                         <div class="backtext absolute text-center top-[40%] font-semibold font-rockstar left-[50%] -translate-x-1/2 -translate-y-1/2 text-[210px] z-[0]  scale-90 bg-gradient-to-r from-zinc-700 via-white/80 to-zinc-500 bg-clip-text text-transparent opacity-40 z-[0]">
                             <h1 class="gradient-text">ROSCOE</h1>
                         </div>
@@ -581,7 +660,7 @@
                         </div>
                     </div>
             
-                    <div class="page10  relative w-full h-screen">
+                    <div class="page10  relative w-full h-screen  ">
                         <div class="backtext absolute  text-center top-[40%] font-semibold font-rockstar left-[50%] -translate-x-1/2 -translate-y-1/2 text-[210px] z-[0]  scale-90 bg-gradient-to-r from-zinc-700 via-white/80 to-zinc-500 bg-clip-text text-transparent opacity-40 z-[0]">
                             <h1 class="gradient-text">SPEEDCONCEPT</h1>
                         </div>
@@ -604,7 +683,7 @@
                         </div>
                     </div>
             
-                    <div class="page11  relative w-full h-screen">
+                    <div class="page11  relative w-full h-screen  ">
                         <div class="backtext absolute  text-center top-[40%] font-semibold font-rockstar left-[50%] -translate-x-1/2 -translate-y-1/2 text-[210px] z-[0]  scale-90 bg-gradient-to-r from-zinc-700 via-white/80 to-zinc-500 bg-clip-text text-transparent opacity-40 z-[0]">
                             <h1 class="gradient-text">SUPERCALIBER</h1>
                         </div>
@@ -676,7 +755,7 @@
             
                     <div class="page14  relative w-full h-screen  ">
                         <div class="backtext absolute  text-center top-[40%] font-semibold font-rockstar left-[50%] -translate-x-1/2 -translate-y-1/2 text-[210px] z-[0]  scale-90 bg-gradient-to-r from-zinc-700 via-white/80 to-zinc-500 bg-clip-text text-transparent opacity-40 z-[0]">
-                            <h1 class="gradient-text">CALIBER</h1>
+                            <h1 class="gradient-text">X-CALIBER</h1>
                         </div>
                         
                         <div id="xcaliber" class="w-full h-screen absolute z-[200]">
@@ -733,51 +812,281 @@
         <div class="banners h-screen w-full relative">
             <div class="bannerwrap h-[100%] w-[100%] flex  no-wrap absolute">
                 <div class="banner1 h-[100%] w-[100%]  flex justify-center items-center h-screen relative shrink-0">
-                <div class="content absolute left-[50%] top-[50%] -translate-x-[95%] -translate-y-1/2 text-white ">
-                    <h1 class="text-[4vw]">Ultra-lightweight carbon</h1>
-                    <p class="text-[.9vw] font-medium">Ultra-light 800 Series OCLV carbon offers an aerodynamic advantage without compromising weight.</p>
+                    <div class="content absolute left-[50%] top-[50%] -translate-x-[95%] -translate-y-1/2 text-white ">
+                        <h1 class="text-[4vw]">Ultra-lightweight carbon</h1>
+                        <p class="text-[.9vw] font-medium">Ultra-light 800 Series OCLV carbon offers an aerodynamic
+                            advantage without compromising weight.</p>
+                    </div>
+                    <img class="h-[100vh] w-full object-center object-cover"
+                        src="https://media.trekbikes.com/image/upload/w_1920,f_auto,fl_progressive:semi,q_auto/TK23_LAUNCH_Emonda_Update_1Up_1"
+                        alt="">
                 </div>
-                <img class="h-[100vh] w-full object-center object-cover" src="https://media.trekbikes.com/image/upload/w_1920,f_auto,fl_progressive:semi,q_auto/TK23_LAUNCH_Emonda_Update_1Up_1" alt="">
+                <div class="banner2cover h-full w-full  shrink-0 relative">
+                    <div class="overtext absolute inline-block left-[35%] top-[50%] w-fit z-[10]">
+                        <h1 class="text-white text-[3vw] font-medium -tracking-[2px] top-[55%] left-[25%]">The all-new
+                            Emonda is the best bike I have ever ridden</h1>
+                        <h1 class="text-white text-[1.5vw] font-medium -tracking-[1px] -top-[55%] left-[90%]">-Lizzie
+                            Deignan </h1>
+                    </div>
+                    <div class="banner2 h-[100vh]">
+                        <img class="h-full w-full object-center object-cover"
+                            src="https://media.trekbikes.com/image/upload/w_1920,c_fill,f_auto,fl_progressive:semi,q_auto/Marquee_MiddleSlim_Lizzie%20copy"
+                            alt="">
+                        <img class="h-full w-full object-center object-cover"
+                            src="https://media.trekbikes.com/image/upload/w_1920,c_fill,f_auto,fl_progressive:semi,q_auto/TK23_LAUNCH_Emonda_Update_Marquee_M_4"
+                            alt="">
+                    </div>
+                </div>
             </div>
-            <div class="banner2cover h-full w-full  shrink-0 relative">
-                <div class="overtext absolute inline-block left-[35%] top-[50%] w-fit z-[10]"><h1 class="text-white text-[3vw] font-medium -tracking-[2px] top-[55%] left-[25%]">The all-new Emonda is the best bike I have ever ridden</h1>
-                    <h1 class="text-white text-[1.5vw] font-medium -tracking-[1px] -top-[55%] left-[90%]">-Lizzie Deignan </h1></div>
-                <div class="banner2 h-[100vh]">
-                    <img class="h-full w-full object-center object-cover" src="https://media.trekbikes.com/image/upload/w_1920,c_fill,f_auto,fl_progressive:semi,q_auto/Marquee_MiddleSlim_Lizzie%20copy" alt="">
-                    <img class="h-full w-full object-center object-cover" src="https://media.trekbikes.com/image/upload/w_1920,c_fill,f_auto,fl_progressive:semi,q_auto/TK23_LAUNCH_Emonda_Update_Marquee_M_4" alt=""></div>
-            </div></div>
         </div>
         <div class="bannerforphone hidden h-[100vh] w-full">
             <div class="banner1 h-[100%] w-[100%]  flex justify-center items-center h-screen relative shrink-0">
                 <div class="content absolute left-[50%] top-[50%] -translate-x-[95%] -translate-y-1/2 text-white ">
                     <h1 class="text-[4vw]">Ultra-lightweight carbon</h1>
-                    <p class="text-[.9vw] font-medium">Ultra-light 800 Series OCLV carbon offers an aerodynamic advantage without compromising weight.</p>
+                    <p class="text-[.9vw] font-medium">Ultra-light 800 Series OCLV carbon offers an aerodynamic
+                        advantage without compromising weight.</p>
                 </div>
-                <img class="h-[100vh] w-full object-center object-cover" src="https://media.trekbikes.com/image/upload/w_1920,f_auto,fl_progressive:semi,q_auto/TK23_LAUNCH_Emonda_Update_1Up_1" alt="">
+                <img class="h-[100vh] w-full object-center object-cover"
+                    src="https://media.trekbikes.com/image/upload/w_1920,f_auto,fl_progressive:semi,q_auto/TK23_LAUNCH_Emonda_Update_1Up_1"
+                    alt="">
             </div>
         </div>
-        <div  class="bgvideo  h-screen w-full relative  ">
-            <video class="opacity-0 transition  " style="transition: all ease .5s;" src="./videoplayback.mp4" autoplay loop muted></video>
-            <div class="info scale-150 p-5 border-[1px] border-white rounded-lg w-fit absolute top-[5%] text-white left-[50%] top-[50%] -translate-x-[50%] -translate-y-1/2 flex flex-col text-center" style="transition: all ease 0.5s;">
+        <div class="equipments w-full h-screen bg-black max-sm:bg-black  flex justify-center items-center relative">
+            <h1 class="greaup absolute w-full text-center text-[10vw] max-sm:hidden  font-bold bg-gradient-to-r from-zinc-700 via-white/80 to-zinc-500 bg-clip-text text-transparent opacity-40 z-[0]">LETS' GEARUP </h1>
+          <div class="flex flex-col gap-40 justify-center items-center">
+            <h1 class=" max-sm:text-[40px] gearup max-sm:font-bold max-sm:absolute  max-sm:top-[2%] max-sm:bg-zinc-200 lg:hidden">LETS' GREAUP</h1>
+            <div class="fullequip justify-center  max-sm:flex max-sm:gap-4 max-sm:px-2 max-sm:tracking-tight max-sm:absolute  max-sm:top-[18%] max-sm:h-[100%] max-sm:w-[100%] max-sm:text-2xl  ">
+                <div class="colo1 t "><h1 class="equinames max-sm:text-[20px]  max-sm:font-bold   max-sm:bg-zinc-700 lg:hidden">Components</h1><div>
+                    <div><h1 class=" max-sm:text-[15px]  max-sm:font-sm    max-sm:bg-white ml-4 lg:hidden max-sm:mt-4">Wheels</h1>
+                     <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Tyres</h1>
+                     <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Lights</h1>
+                     <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Saddles</h1>
+                     <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Pedals</h1>
+                     <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden"></h1>
+                     <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Grips & tape</h1>
+                     <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Handlebar accessories</h1>
+                     <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Stems</h1>
+                     <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Seat posts</h1>
+                     <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden"></h1>
+                     <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Brakes & levers</h1>
+                     <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Kickstands</h1>
+                     <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Stabilisers</h1>
+                     <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Drivetrain</h1>
+                     <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Shop all</h1></div>
+     
+                </div></div>
+                <div class="colo2  "><h1 class="equinames max-sm:text-[20px]  max-sm:font-bold   max-sm:bg-zinc-700 lg:hidden">Accessories</h1>
+                    <div><h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden max-sm:mt-4">Helmets</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Shoes</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Lights</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">GPS</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Water bottles & cages</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Bags & panniers</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Pumps</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Bike racks</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Mudguards</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Tools & maintenance</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden"></h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Shop all</h1></div>
+                    
+                </div>
+                <div class="colo3  "><h1 class="equinames max-sm:text-[20px]  max-sm:font-bold   max-sm:bg-zinc-700 lg:hidden">Collections</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden max-sm:mt-4">Daytime Running Lights</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Road bike gear</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Mountain bike gear</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Commuter gear</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Cyclocross gear</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Gravel bike gear</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Kids' gear</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Triathlon gear</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Winter cycling gear</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Women’s cycling gear</h1>
+                    <h1 class="equinames max-sm:text-[15px]  max-sm:font-sm  max-sm:bg-white ml-4 lg:hidden">Blendr integration</h1>
+                </div>
+                  <div>
+                   
+                  </div>
+            </div>
+          </div>
+    
+            <div class="wrapper flex justify-center items-center gap-20  relative  z-[200] translate-x-full max-sm:hidden ">
+                <div class="table1  ">
+                    <div class="book p-2 rounded-[20px] h-[20vw] w-[18vw] p-2 mb-20 bg-zinc-300 overflow-hidden">
+                        <div>
+                            <img src="./equipments/wheel.png" class="equip scale-125  relative left-[-28%] ease-linear duration-500 smooth delay-75 hover:rotate-[45deg] hover:left-[-23%]" alt="">
+                        </div>
+                        <div class="mt-2 p-6"> 
+                            <div class="flex justify-between gap-4 items-center gap-4">
+                                <div class="title text-black text-2xl font-semibold ">WHEELS</div>
+                                <div class="relative flex justify-center items-center  w-[55px] h-[55px] flex justify-center items-center text-black text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out border-[.2px] border-zinc-600 hover:scale-105 hover:text-white  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-black before:to-zinc-500 before:transition-all before:duration-300 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"><i class="text-black ri-arrow-right-line"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table2 flex flex-col gap-10">
+                    <div class="book p-2 rounded-[20px] h-[20vw] w-[18vw] relative top-[-5%] bg-zinc-300 overflow-hidden">
+                        <div>
+                            <img src="./equipments/helmet.png" class="equip scale-125 relative left-[-20%]  ease-linear duration-500 smooth delay-75  hover:left-[-13%]" alt="">
+                        </div>
+                        <div class="mt-2 p-6"> 
+                            <div class="flex justify-between items-center gap-4">
+                                <div class="title text-black text-2xl font-semibold ">HELMETS</div>
+                                <div class="relative w-[55px] text-black h-[55px] flex justify-center items-center text-black text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out border-[.2px] border-zinc-600 hover:scale-105 hover:text-white  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-black before:to-zinc-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"><i class="text-black ri-arrow-right-line"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book p-2 rounded-[20px] h-[20vw] w-[18vw] relative left-[40%]  bg-zinc-300 overflow-hidden">
+                        <div>
+                            <img src="./equipments/gloves.png" class="equip scale-110  relative left-[-15%]   ease-linear duration-500 smooth delay-75 hover:left-[-13%] " alt="">
+                        </div>
+                        <div class="mt-2 p-6"> 
+                            <div class="flex justify-between gap-4 items-center">
+                                <div class="title text-black text-2xl font-semibold ">GLOVES</div>
+                                <div class="relative w-[55px] text-black h-[55px] flex justify-center items-center text-black text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out border-[.2px] border-zinc-600 hover:scale-105 hover:text-white  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-black before:to-zinc-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"><i class="text-black ri-arrow-right-line"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table3 flex">
+                    <div class="book p-2 rounded-[20px] h-[20vw] w-[18vw] mt-20 ml-20 bg-zinc-300 overflow-hidden">
+                        <div>
+                            <img src="./equipments/pumps.png" class="equip scale-125 relative left-[-20%] rotate-[-40deg]  ease-linear duration-500 smooth delay-75 h hover:left-[-12%]" alt="">
+                        </div>
+                        <div class="mt-2 p-6"> 
+                            <div class="flex justify-between gap-4 items-center">
+                                <div class="title text-black text-2xl font-semibold ">PUMPS</div>
+                                <div class="relative w-[55px] text-black h-[55px] flex justify-center items-center text-black text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out border-[.2px] border-zinc-600 hover:scale-105 hover:text-white  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-black before:to-zinc-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"><i class="text-black ri-arrow-right-line"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table1   ">
+                    <div class="book p-2 rounded-[20px] h-[20vw] w-[18vw] mb-20 bg-zinc-300 overflow-hidden">
+                        <div>
+                            <img src="./equipments/light.png" class="equip scale-150 relative left-[-18%]  ease-linear duration-500 smooth delay-75  hover:left-[-15%]" alt="">
+                        </div>
+                        <div class="mt-2 p-6"> 
+                            <div class="flex justify-between gap-4 items-center">
+                                <div class="title text-black text-2xl font-semibold ">LIGHTS</div>
+                                <div class="relative w-[55px] text-black h-[55px] flex justify-center items-center text-black text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out border-[.2px] border-zinc-600 hover:scale-105 hover:text-white  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-black before:to-zinc-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"><i class="text-black ri-arrow-right-line"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table2 flex flex-col gap-10">
+                    <div class="book p-2 rounded-[20px] h-[20vw] w-[18vw]  bg-zinc-300 overflow-hidden">
+                        <div>
+                            <img src="./equipments/saddles.png" class="equip scale-125 relative left-[-20%]  ease-linear duration-500 smooth delay-75  hover:left-[-13%]" alt="">
+                        </div>
+                        <div class="mt-2 p-6"> 
+                            <div class="flex justify-between gap-4 items-center">
+                                <div class="title text-black text-2xl font-semibold ">SADDLES</div>
+                                <div class="relative w-[55px] text-black h-[55px] flex justify-center items-center text-black text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out border-[.2px] border-zinc-600 hover:scale-105 hover:text-white  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-black before:to-zinc-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"><i class="text-black ri-arrow-right-line"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book p-2 rounded-[20px] h-[20vw] w-[18vw] relative left-[30%] bg-zinc-300 overflow-hidden">
+                        <div>
+                            <img src="./equipments/bottle.png" class="equip scale-110  relative left-[-18%] rotate-[35deg]  ease-linear duration-500 smooth delay-75 hover:left-[-13%] " alt="">
+                        </div>
+                        <div class="mt-2 p-6"> 
+                            <div class="flex justify-between gap-4 items-center">
+                                <div class="title text-black text-2xl font-semibold ">BOTTLES</div>
+                                <div class="relative w-[55px] text-black h-[55px] flex justify-center items-center text-black text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out border-[.2px] border-zinc-600 hover:scale-105 hover:text-white  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-black before:to-zinc-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"><i class="text-black ri-arrow-right-line"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table3 flex">
+                    <div class="book  rounded-[20px] h-[20vw] w-[18vw] mt-20 ml-20 bg-zinc-300 overflow-hidden">
+                        <div>
+                            <img src="./equipments/drivetrain.png" class="equip scale-110 relative left-[-18%]  ease-linear duration-500 smooth delay-75 h hover:left-[-12%]" alt="">
+                        </div>
+                        <div class="mt-2 p-6"> 
+                            <div class="flex ml-2 items-center gap-[4.5vw]">
+                                <div class="title text-black text-2xl font-semibold ">DRIVETRAIN</div>
+                                <div class="relative w-[55px] text-black h-[55px] flex justify-center items-center text-black text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out border-[.2px] border-zinc-600 hover:scale-105 hover:text-white  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-black before:to-zinc-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"><i class="text-black ri-arrow-right-line"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table1   ">
+                    <div class="book p-2 rounded-[20px] h-[20vw] w-[18vw] mb-20 bg-zinc-300 overflow-hidden">
+                        <div>
+                            <img src="./equipments/shoes.png" class="equip scale-150 relative left-[-5%]  ease-linear duration-500 smooth delay-75 rotate-[45deg] hover:left-[-2%]" alt="">
+                        </div>
+                        <div class="mt-2 p-6"> 
+                            <div class="flex justify-between gap-4 items-center">
+                                <div class="title text-black text-2xl font-semibold ">SHOES</div>
+                                <div class="relative w-[55px] text-black h-[55px] flex justify-center items-center text-black text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out border-[.2px] border-zinc-600 hover:scale-105 hover:text-white  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-black before:to-zinc-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"><i class="text-black ri-arrow-right-line"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table2 flex flex-col gap-10">
+                    <div class="book p-2 rounded-[20px] h-[20vw] w-[18vw]  bg-zinc-300 overflow-hidden">
+                        <div>
+                            <img src="./equipments/tools.png" class="equip scale-150 relative left-[-28%]  ease-linear rotate-[30deg] duration-500 smooth delay-75  hover:left-[-20%]" alt="">
+                        </div>
+                        <div class="mt-2 p-6"> 
+                            <div class="flex justify-between gap-4 items-center">
+                                <div class="title text-black text-2xl font-semibold ">TOOLS</div>
+                                <div class="relative w-[55px] text-black h-[55px] flex justify-center items-center text-black text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out border-[.2px] border-zinc-600 hover:scale-105 hover:text-white  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-black before:to-zinc-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"><i class="text-black ri-arrow-right-line"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book p-2 rounded-[20px] h-[20vw] w-[18vw] relative left-[30%] bg-zinc-300 overflow-hidden">
+                        <div>
+                            <img src="./equipments/gps.png" class="equip scale-150  relative left-[-15%]   ease-linear duration-500 smooth delay-75 hover:left-[-13%] " alt="">
+                        </div>
+                        <div class="mt-2 p-6"> 
+                            <div class="flex justify-between gap-4 items-center">
+                                <div class="title text-black text-2xl font-semibold ">GPS</div>
+                                <div class="relative w-[55px] text-black h-[55px] flex justify-center items-center text-black text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out border-[.2px] border-zinc-600 hover:scale-105 hover:text-white  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-black before:to-zinc-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"><i class="text-black ri-arrow-right-line"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table3 flex">
+                    <div class="book p-2 rounded-[20px] h-[20vw] w-[18vw] mt-20 ml-20 bg-zinc-300 overflow-hidden">
+                        <div>
+                            <img src="./equipments/Racks.png" class="equip scale-125 relative left-[-25%]  ease-linear duration-500 smooth delay-75 h hover:left-[-20%]" alt="">
+                        </div>
+                        <div class="mt-2 p-6"> 
+                            <div class="flex justify-between gap-4 items-center">
+                                <div class="title text-black text-2xl font-semibold ">RACKS</div>
+                                <div class="relative w-[55px] text-black h-[55px] flex justify-center items-center text-black text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out border-[.2px] border-zinc-600 hover:scale-105 hover:text-white  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-black before:to-zinc-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"><i class="text-black ri-arrow-right-line"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="bgvideo  h-screen w-full relative  ">
+            <video class="opacity-0 transition  " style="transition: all ease .5s;" src="./videoplayback.mp4" autoplay
+                loop muted></video>
+            <div class="info scale-150 p-5 border-[1px] border-white rounded-lg w-fit absolute top-[5%] text-white left-[50%] top-[50%] -translate-x-[50%] -translate-y-1/2 flex flex-col text-center"
+                style="transition: all ease 0.5s;">
                 <h1 class="text-[1.5vw]">Super Fast</h1>
                 <h1 class="text-[1.5vw]">Super light</h1>
                 <h3 class="mt-5 bg-white/40 py-1 rounded-xl text-[.7vw] hover:bg-white/20">Peek</h3>
             </div>
-          </div>
-          <div id="footer h-[100vh] w-full">
+        </div>
+        <div id="footer h-[100vh] w-full">
             <div id="top">
                 <div id="left">
-                    
+
                     <h1>LET'S START AN <br>ADVENTURE</h1>
                     <button class="but">CONTACT US</button>
-    
+
                 </div>
                 <div class="mt-[10vw]" id="right">
                     <video id="vid" autoplay loop muted>
-                        <source src="Untitled.mp4" type="video/mp4">
+                        <source src="Untitled.mp4"2 type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                   
+
                 </div>
             </div>
             <div id="bottom">
@@ -789,7 +1098,7 @@
                         <i class="ri-arrow-right-line"></i>
                     </div>
                 </div>
-    
+
                 <div id="bbottom">
                     <div class="col">
                         <h1>SHOP</h1>
@@ -816,16 +1125,16 @@
                         <p>Bike archieve</p>
                     </div>
                 </div>
-    
+
             </div>
         </div>
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
-  <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>

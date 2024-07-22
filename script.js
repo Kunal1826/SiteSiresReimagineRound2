@@ -2416,5 +2416,29 @@ tl.to("#top #left",{
 
 
 })
+gsap.to(".book", {
+    x: "-1600%",
+    scrollTrigger: {
+      trigger: '.equipments', 
+      scroller: '#main',
+      start: "top 0%",
+      end: "top -300%", 
+      scrub: 3,
+     
 
+
+      pin:".equipments"
+    }
+  });
+   gsap.from(".greaup",{
+    x:"-100%",
+    scrollTrigger:{
+      trigger: '.equipments', 
+      scroller: '#main',
+      start: "top 0%",
+      end: "top -100%", 
+      scrub: 1,
+      
+    }
+   })
 
