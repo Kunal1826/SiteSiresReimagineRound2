@@ -2388,7 +2388,6 @@ gsap.to(".fullcateg",{
         scroller:"#main",
         start:"top 0%",
         end: "top -200%",
-        markers:true,
         scrub:.5,
         pin:true
     },
