@@ -235,6 +235,160 @@ canvas{
     font-weight: 400;
     font-size: 44px;
 }
+.slider-container {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 91%;
+  position: relative;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  background-color: rgba(128, 128, 128, 0.523);
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+
+.slider-arrow.left {
+  left: 10px;
+}
+
+.slider-arrow.right {
+  right: 10px;
+}
+
+.product-container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  top: -8%;
+  
+}
+
+.product {
+  position: absolute;
+ transition: opacity 0.5s, transform 0.5s;
+}
+
+.center-product {
+  opacity: 1 !important;
+  
+  z-index: 1;
+  position: relative;
+   
+}
+
+.name {
+position: absolute;
+width: 100%;
+top: 15%;
+color: rgb(243, 236, 236);
+text-align: center;
+font-size: 1.9rem;
+margin-bottom: 50px;
+z-index: 777;
+font-weight: 600;
+
+
+
+}
+
+.cursor{
+position:fixed;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background: #fff;
+transition: 0.1s;
+transform: translate(-50%,-50%);
+pointer-events: none;
+z-index: 999999;
+mix-blend-mode: difference;
+}
+.name:hover ~ .cursor{
+transform: scale(3);
+}
+
+
+.details {
+  position: absolute;
+  top: 90%; 
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  font-size: 1.2rem;
+}
+.gradient-text {
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+}
+
+.button {
+padding: 2px 2px;
+border: none;
+border-radius: 5px;
+
+
+text-transform: uppercase;
+cursor: pointer;
+color: #e4ebec;
+transition: all 1000ms;
+font-size: 16px;
+position: relative;
+overflow: hidden;
+
+}
+
+button:hover {
+color: #000000;
+transform: scale(1.1);
+box-shadow: 4px 5px 17px -4px #f8f8f8;
+}
+
+button::before {
+content: "";
+position: absolute;
+left: -50px;
+top: 0;
+width: 0;
+height: 100%;
+background-color: #dae4e6;
+transform: skewX(45deg);
+z-index: -1;
+transition: width 1000ms;
+}
+
+button:hover::before {
+width: 250%;
+}
+
 
 
 
@@ -373,8 +527,17 @@ canvas{
       .bgvideo .info{
         padding: 10px;
       }
+      .banner2cover{
+        display: none;
+      }
+     .banners{
+      display: none;
+     }
+     .bannerforphone{
+      display: inherit;
+     }
   }
 
   .fullcateg{
-    clip-path: circle(var(--clip) at 51.5% 61%);
+    clip-path: circle(var(--clip) at 53% 63%);
   }
